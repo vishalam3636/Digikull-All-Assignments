@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mainContainer {
+  background-color: rgb(228, 228, 228);
+  width: 400px;
+  padding: 20px 0 30px 0;
+  border: 2px solid #000;
+  border-radius: 15px;
+  margin: 150px auto;
+}
+
+.inputFieldContainer {
+  /* background-color: aqua; */
+}
+
+.inputFieldContainer input {
+  width: 270px;
+  height: 45px;
+  /* border: none; */
+  border-radius: 10px;
+  padding: 3px 20px;
+  margin-bottom: 30px;
+  font-size: 19px;
+}
+
+.buttonsContainer {
+  /* background-color: lightsalmon; */
+  height: 150px;
+  padding: 20px 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttonsContainer button,
+.resetButtonContainer button {
+  background-color: #000;
+  color: #fff;
+  font-size: 18px;
+  width: 250px;
+  height: 45px;
+  border: none;
+  border-radius: 10px;
+  transition: 0.3s;
+  /* margin-bottom: 30px; */
+}
+
+.buttonsContainer button:hover,
+.resetButtonContainer button:hover {
+  width: 215px;
+  height: 35;
+  font-size: 16px;
+  background-color: rgb(218, 215, 215);
+  color: #000;
+  border: 2px solid crimson;
+}
+
+.addButtonContainer,
+.resetButtonContainer,
+.subtractButtonContainer {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.addButtonContainer {
+  /* background-color: magenta; */
+}
+
+.resetButtonContainer {
+  /* background-color: olive; */
+}
+
+.subtractButtonContainer {
+  /* background-color: crimson; */
+}
+
+.displayResultContainer {
+  /* background-color: red; */
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.result {
+  margin-left: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  background-color: crimson;
+  padding: 5px 10px;
+  color: #fff;
+
+  transition: 0.5s;
+}
+
+.result:hover {
+  font-size: 30px;
+}
