@@ -4,8 +4,6 @@ class Output extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      totalTip: 350,
-      // customersList: this.props.listItems,
       totalCustomer: 0,
       totalTip: 0,
     };
@@ -24,16 +22,11 @@ class Output extends React.Component {
         </div>
         <div className="customersList">
           <ul>
-            {/* {this.state.customersList.map((item) => (
-              <li>{item}</li>
-            ))} */}
             {this.props.listItems.map((item) => (
               <li>{item}</li>
             ))}
           </ul>
         </div>
-
-        {/* clculate tip and customer */}
         <div className="calculateButtonContainer">
           <button onClick={this.handleCalculateTipAndCustomer}>
             Calculate Tip & Customer

@@ -45,8 +45,6 @@ class Input extends React.Component {
       this.setState({ customersList: updatedList });
       this.setState({ totalTip: this.state.totalTip + calculatedTip });
 
-      // console.log(this.state.customersList);
-
       this.setState({ billAmt: 0 });
       this.setState({ service: "" });
       this.setState({ custName: "" });
@@ -56,14 +54,9 @@ class Input extends React.Component {
   };
 
   render() {
-    // console.log(this.state.billAmt);
-    // console.log(this.state.custName);
-    // console.log(this.state.service);
-    // console.log(this.state.customersList);
     return (
       <>
         <div className="mainContainer input">
-          {/* <h1>This is Input Component</h1> */}
           <div className="inputHeading">
             <h3>Enter Your Bill Amount</h3>
           </div>
@@ -102,9 +95,6 @@ class Input extends React.Component {
           </div>
         </div>
 
-        {/***************************************************/}
-        {/******************** OUTPUT COMPONENT *************/}
-        {/***************************************************/}
         <Output
           listItems={this.state.customersList}
           totalTip={this.state.totalTip}

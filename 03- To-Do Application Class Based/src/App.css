@@ -1,0 +1,160 @@
+.App {
+  text-align: center;
+}
+
+/* TODO APP STYLING */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mainContainer {
+  /* background-color: lightpink; */
+  width: 98%;
+  margin: 0 auto;
+}
+
+.mainContainer .heading {
+  background: linear-gradient(to right, #fffbd5, #b20a2c);
+  margin: 0px 0px 25px 0px;
+  font-size: 22px;
+}
+
+.addTodoContainer {
+  /* background-color: olive; */
+  margin: 5px;
+}
+
+.inputFieldContainer {
+  /* background-color: lightcoral; */
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputFieldContainer input {
+  width: 220px;
+  height: 35px;
+  padding: 3px 10px;
+  text-align: center;
+  margin-left: 10px;
+  border-radius: 6px;
+  font-size: 17px;
+}
+
+.AddButtonContainer {
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  padding: 10px 0px;
+  margin-bottom: 20px;
+}
+
+.AddButtonContainer button {
+  width: 80px;
+  height: 32px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+
+.AddButtonContainer button:hover {
+  background-color: crimson;
+  color: #fff;
+}
+
+.displayTodosContainer {
+  background-color: rgb(234, 230, 230);
+  height: 75vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow-y: auto;
+  border: 2px solid grey;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.todoContainer {
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+  width: 300px;
+  padding: 10px 15px;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+.taskNumberContainer {
+  /* background-color: magenta; */
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.taskNumberContainer h4 {
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.taskNameContainer {
+  /* background-color: goldenrod; */
+  margin-bottom: 13px;
+}
+
+.dateContainer {
+  /* background-color: lawngreen; */
+  padding: 5px 0;
+  margin-bottom: 10px;
+}
+
+.dateContainer input {
+  width: 150px;
+  height: 28px;
+}
+
+.descriptionContainer {
+  /* background-color: darkorchid; */
+  padding: 5px 0px;
+}
+
+.descriptionContainer textarea {
+  padding: 3px 8px;
+}
+
+.checkfieldContainer {
+  /* background-color: lightcoral; */
+  padding: 5px 0px;
+}
+
+.checkfieldContainer input {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.deleteContainer {
+  /* background-color: purple; */
+  padding: 5px 0;
+  margin-bottom: 10px;
+}
+
+.deleteContainer button {
+  width: 90px;
+  height: 30px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.deleteContainer button:hover {
+  background-color: crimson;
+  color: #fff;
+}
+
+.reamrkContainer {
+  /* background-color: maroon; */
+}
