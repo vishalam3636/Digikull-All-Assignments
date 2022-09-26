@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  background-color: grey;
+  /* width: 1100px; */
+  /* width: 98%; */
+  /* width: 50%; */
+  width: 900px;
+
+  margin: 5px auto;
+  height: 99vh;
+  padding: 10px 0px;
+  border-radius: 10px;
+
+  position: relative;
+}
+
+.App .heading {
+  background-color: aqua;
+}
+
+/* APP TOP STYLING */
+
+/* APP MIDDLE STYLING */
+.appMiddle {
+  background-color: bisque;
+  width: 98%;
+  /* height: 720px; */
+  height: 590px;
+  margin: 14px auto;
+  padding: 0px 10px;
+
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: space-evenly;
+
+  border-radius: 10px;
+}
+
+/* APP BOTTOM STYLING */
+.appBottom {
+  background-color: black;
+}
+
+/* CART AND CHECKOUT */
+.cartAndCheckout {
+  /* background-color: red; */
+  height: 96%;
+}

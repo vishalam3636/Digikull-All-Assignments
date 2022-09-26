@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap");
+
+.menuContainer {
+  /* background-color: orchid; */
+
+  /* background-image: linear-gradient(to right, #f5f7fa, #b8c6db); */
+  background-image: linear-gradient(to right, #8b939a, #5b6467);
+
+  /* width: 40%;
+  height: 96%; */
+  width: 360px;
+  /* height: 96%; */
+  height: 96%;
+  margin-top: 10px;
+
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.menuContainer .heading {
+  background-color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  width: 200px;
+  margin: auto;
+  margin-bottom: 25px;
+  font-family: "Qwitcher Grypen", cursive;
+  font-size: 45px;
+  border-radius: 10px;
+}
+
+.menuContainer .displayMenu {
+  background-color: black;
+  width: 98%;
+  height: 83%;
+  margin: auto;
+  padding: 10px 0px;
+
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.menuContainer .displayMenu .dishcard {
+  /* background-color: olive; */
+
+  background-color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+  /* width: 270px; */
+  width: 230px;
+  /* height: 300px; */
+  padding: 15px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0px;
+  border-radius: 10px;
+}
+
+.menuContainer .displayMenu .dishcard .imageContainer {
+  /* background-color: red; */
+  width: 97%;
+  height: 84%;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.dishDetail .quantityContainer {
+  /* display: flex; */
+  display: none;
+}
+
+.dishDetail .quantityContainer .displayQty {
+  /* background-color: red; */
+  border: 1px solid #000;
+  width: 35px;
+  font-size: 18px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.dishDetail .quantityContainer button {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(236, 129, 129);
+  margin: 2px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.dishDetail .quantityContainer button:hover {
+  border: 2px solid crimson;
+  background-color: #fff;
+  margin: 2px;
+}
+
+.dishDetail .addToThaaliButtonContainer {
+  margin-top: 10px;
+}
+
+.dishDetail .addToThaaliButtonContainer button {
+  width: 110px;
+  height: 30px;
+  border-radius: 6px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.dishDetail .addToThaaliButtonContainer button:hover {
+  background-color: #000;
+  color: #fff;
+  border: #fff;
+}

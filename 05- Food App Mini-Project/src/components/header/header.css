@@ -1,0 +1,12 @@
+.headerContainer {
+  background-color: pink;
+  width: 98%;
+  height: 80px;
+  margin: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px;
+}

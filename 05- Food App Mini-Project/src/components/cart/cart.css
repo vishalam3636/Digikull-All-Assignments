@@ -1,0 +1,170 @@
+.cartContainer {
+  background-color: hotpink;
+  /* width: 30%;
+  height: 96%; */
+  width: 360px;
+  /* height: 96%; */
+  height: 96%;
+  padding: 5px;
+
+  margin-top: 10px;
+
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.cartHeading {
+  margin-bottom: 25px;
+}
+
+.displayCartItemsContainer {
+  background-color: rgb(237, 228, 228);
+  width: 98%;
+  height: 270px;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+
+  overflow: auto;
+  border-radius: 10px;
+}
+
+.addedItemContainer {
+  /* background-color: aqua; */
+  background-color: #fff;
+  width: 98%;
+  height: fit-content;
+  padding: 8px;
+  margin: 10px 0px;
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.addedItemContainer .top {
+  /* background-color: black; */
+  width: 100%;
+  /* height: 180px; */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.addedItemContainer .imageContainer {
+  /* background-color: olive; */
+  width: 100px;
+  height: 100px;
+}
+
+.descriptionContainer .heading {
+  /* background-color: antiquewhite; */
+  background-color: #fff;
+  margin-bottom: 8px;
+  text-decoration: underline;
+}
+
+.descriptionContainer .description {
+  /* background-color: lightsalmon; */
+  text-align: left;
+}
+
+.addedItemContainer .descriptionContainer {
+  /* background-color: violet; */
+  width: 210px;
+  /* height: 100px; */
+  padding: 0px 0px 0px 12px;
+
+  /* overflow: hidden; */
+}
+
+.addedItemContainer .bottom {
+  /* background-color: coral; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addedItemContainer .bottom .buttonsContainer .quantityContainer {
+  /* background-color: lightgray; */
+  width: 105px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addedItemContainer .bottom .buttonsContainer .quantityContainer .displayQty {
+  /* background-color: red; */
+  border: 1px solid #000;
+  background-color: #fff;
+  width: 35px;
+  font-size: 18px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.addedItemContainer .bottom .buttonsContainer .quantityContainer button {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  border: 2px solid crimson;
+  color: #000;
+  margin: 2px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.addedItemContainer .bottom .buttonsContainer .quantityContainer button:hover {
+  background-color: crimson;
+  color: #fff;
+}
+
+.addedItemContainer .bottom .buttonsContainer .removeContainer {
+  /* background-color: red; */
+  width: 105px;
+  margin: 1px 0px 0px;
+}
+
+.addedItemContainer .bottom .buttonsContainer .removeContainer button {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  border: 2px solid crimson;
+  color: #000;
+  margin: 3px 0px 0px;
+  font-size: 16spx;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.addedItemContainer .bottom .buttonsContainer .removeContainer button:hover {
+  background-color: crimson;
+  color: #fff;
+}
+
+.addedItemContainer .bottom .dishPriceContainer {
+  /* background-color: whitesmoke; */
+  width: 170px;
+  height: 30px;
+  padding: 0px 10px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

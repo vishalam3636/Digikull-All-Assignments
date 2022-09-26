@@ -1,0 +1,59 @@
+.checkoutContainer {
+  /* background-color: olive; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 225px;
+
+  width: 360px;
+  /* height: 31%; */
+  padding: 5px;
+
+  margin-top: 10px;
+
+  border-radius: 10px;
+}
+
+.checkoutContainer .detailsHeading {
+  /* background-color: antiquewhite; */
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.checkoutContainer .detailsHeading h3 {
+  text-decoration: underline;
+}
+
+.checkoutContainer .details {
+  /* background-color: lightseagreen; */
+  margin: 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 7px;
+}
+
+.checkoutContainer .details label {
+  font-weight: 500;
+}
+
+.checkoutContainer .details p {
+  font-size: 15px;
+}
+
+.checkOutButtonContainer {
+  /* background-color: azure; */
+  margin-top: 15px;
+}
+
+.checkOutButtonContainer button {
+  width: 150px;
+  height: 35px;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+.checkOutButtonContainer button:hover {
+  background-color: crimson;
+  color: #fff;
+}
