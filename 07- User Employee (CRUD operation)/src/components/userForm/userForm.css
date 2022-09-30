@@ -5,6 +5,7 @@
 }
 
 .userFormContainer {
+  /* background-color: pink; */
   border: 2px solid black;
   width: 70%;
   margin: auto;
@@ -54,4 +55,12 @@
 .AddUserButtonContainer button:hover {
   background-color: white;
   color: #000;
+}
+
+/* MEDIA QUERY RESPONSIVENESS */
+@media only screen and (max-width: 600px) {
+  .userFormContainer {
+    width: 98%;
+    padding: 15px 10px;
+  }
 }

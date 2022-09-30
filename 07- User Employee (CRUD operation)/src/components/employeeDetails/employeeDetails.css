@@ -39,6 +39,10 @@
 
 .employeeDetailsContainer .top .searchFieldContainer {
   /* background-color: bisque; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .employeeDetailsContainer .top .searchFieldContainer input {
@@ -138,4 +142,32 @@
   background-color: #fff;
   border: 2px solid crimson;
   color: #000;
+}
+
+.table tr .emailColumn {
+  text-align: center;
+  overflow: hidden;
+}
+
+/* MEDIA QUERY ADDING RESPONSIVENESS */
+@media only screen and (max-width: 600px) {
+  .employeeDetailsContainer {
+    /* background-color: aqua;
+    background-color: rgb(193, 241, 241); */
+    width: 98%;
+    min-height: 500px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 50px;
+  }
+
+  .table tr td .editBtn {
+    width: 60px;
+    height: 25px;
+  }
+
+  .table tr td .delBtn {
+    width: 60px;
+    height: 25px;
+  }
 }

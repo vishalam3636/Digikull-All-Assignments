@@ -56,7 +56,7 @@ function EmployeeDetails(props) {
                   <tr key={key}>
                     <td>{item.firstName}</td>
                     <td>{item.lastName}</td>
-                    <td>{item.email}</td>
+                    <td className="emailColumn">{item.email}</td>
                     <td>
                       <div className="buttonContainer">
                         <Link to={`/userDetailEdit/${key}`}>
