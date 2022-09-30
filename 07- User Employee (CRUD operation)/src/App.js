@@ -18,7 +18,7 @@ function App() {
     {
       firstName: "Sweta",
       lastName: "Saha",
-      email: "zoro@yahoo.com",
+      email: "sweta@yahoo.com",
     },
     {
       firstName: "Komal",
