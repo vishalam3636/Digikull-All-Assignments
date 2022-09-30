@@ -1,72 +1,24 @@
 import React from "react";
 import "./employeeDetails.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function EmployeeDetails(props) {
-  const [findUser, setFindUser] = useState("");
-  const [printUser, setPrintUser] = useState([
-    {
-      firstName: "Vishal",
-      lastName: "Chauhan",
-      email: "vishal@yahoo.com",
-    },
-    {
-      firstName: "Sweta",
-      lastName: "Saha",
-      email: "sweta@yahoo.com",
-    },
-    {
-      firstName: "Komal",
-      lastName: "Softy",
-      email: "nautanki@yahoo.com",
-    },
-    {
-      firstName: "Manish",
-      lastName: "Kumar",
-      email: "bandar@gmail.com",
-    },
-  ]);
+  // console.log(props, "props in employeedetails");
 
-  const users = props.users;
+  const printUser = props.printUser;
+  // console.log(printUser, "printUsers in employee details");
+
+  const [findUser, setFindUser] = useState("");
 
   const handleAddEmployee = () => {
-    const searchedUserDetails = users.find(
-      (item) => item.firstName.toUpperCase() === findUser.toUpperCase()
-    );
-    // console.log(searchedUserDetails, "searched user details again");
-
-    if (searchedUserDetails) {
-      if (
-        printUser.find(
-          (item) =>
-            item.firstName.toUpperCase() ===
-            searchedUserDetails.firstName.toUpperCase()
-        )
-      ) {
-        alert("User already exists !!!");
-      } else {
-        const copyPrintUsers = [...printUser];
-        copyPrintUsers.push(searchedUserDetails);
-        setPrintUser(copyPrintUsers);
-      }
-    } else {
-      alert("User Not Found... kindly add the user by filling the form");
-    }
-
-    setFindUser("");
+    props.addEmpFunc(findUser);
   };
 
   const handleDelete = (e) => {
-    let selectedUserId = e.target.id;
-    // console.log(selectedUserId);
-
-    let copyPrintUsers = [...printUser];
-    copyPrintUsers.splice(selectedUserId, 1);
-
-    setPrintUser(copyPrintUsers);
+    props.delEmpFunc(e.target.id);
   };
 
-  // console.log(users, "users");
   // console.log(printUser, "printUser");
 
   return (
@@ -107,7 +59,12 @@ function EmployeeDetails(props) {
                     <td>{item.email}</td>
                     <td>
                       <div className="buttonContainer">
-                        <button className="editBtn">Edit</button>
+                        <Link to={`/userDetailEdit/${key}`}>
+                          <button id={key} className="editBtn">
+                            Edit
+                          </button>
+                        </Link>
+
                         <button
                           id={key}
                           className="delBtn"

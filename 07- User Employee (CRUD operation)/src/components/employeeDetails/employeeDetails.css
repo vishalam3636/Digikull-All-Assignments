@@ -5,8 +5,8 @@
 }
 
 .employeeDetailsContainer {
-  background-color: aqua;
-  background-color: rgb(193, 241, 241);
+  /* background-color: aqua;
+  background-color: rgb(193, 241, 241); */
   width: 80%;
   min-height: 500px;
   border: 2px solid black;
@@ -42,7 +42,7 @@
 }
 
 .employeeDetailsContainer .top .searchFieldContainer input {
-  width: 190px;
+  width: 250px;
   height: 35px;
   padding: 3px 7px;
   font-size: 14px;
@@ -81,7 +81,7 @@
 }
 
 .table tr {
-  background-color: palegreen;
+  background-color: rgb(255, 203, 245);
   text-align: center;
   height: 40px;
 }
@@ -97,6 +97,17 @@
   color: #fff;
   font-size: 17px;
   font-weight: 400;
+
+  border: 2px solid #fff;
+  border-bottom: 2px solid #000;
+}
+
+.table tr th {
+  border: 2px solid #000;
+}
+
+.table tr td {
+  border: 2px solid #000;
 }
 
 .table tr td .editBtn {
