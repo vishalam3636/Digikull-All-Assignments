@@ -7,4 +7,4 @@
 **03- To-Do Application** - [https://vishal-to-do-assignment.netlify.app/] <br />
 **05- Mini-Project (Thaali App) Application** - [https://thaali-app-react-redux-project-vishal.netlify.app/] <br />
 **06- Weather Application** - [https://weather-app-react-project-vishal.netlify.app/] <br />
-**07- Add Employee Application (CRUD)** - [https://sensational-bienenstitch-50bdd2.netlify.app/] <br />
+**07- Add Employee Application (CRUD)** - [https://add-employee-crud-ope-vishal-project.netlify.app/] <br />
