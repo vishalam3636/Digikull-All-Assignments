@@ -21,14 +21,9 @@ function App() {
       email: "sweta@yahoo.com",
     },
     {
-      firstName: "Komal",
-      lastName: "Softy",
-      email: "sofftyyy@yahoo.com",
-    },
-    {
-      firstName: "Manish",
-      lastName: "Kumar",
-      email: "bandar@yahoo.com",
+      firstName: "Brownie 🐕",
+      lastName: "Sweetiee",
+      email: "brownie@yahoo.com",
     },
   ]);
 
