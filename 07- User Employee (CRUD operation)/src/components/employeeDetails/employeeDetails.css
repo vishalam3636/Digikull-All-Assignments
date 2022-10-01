@@ -8,7 +8,7 @@
   /* background-color: aqua;
   background-color: rgb(193, 241, 241); */
   width: 80%;
-  min-height: 400px;
+  min-height: 500px;
   border: 2px solid black;
   border-radius: 10px;
   margin-top: 50px;
@@ -30,22 +30,28 @@
 
 .employeeDetailsContainer .top .headingContainer {
   /* background-color: red; */
-  margin-bottom: 15px;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
 .employeeDetailsContainer .top .headingContainer h3 {
-  border-bottom: 2px solid #000;
+  border-bottom: 3px solid #000;
+  padding: 0px 10px;
 }
 
-.employeeDetailsContainer .top .searchFieldContainer {
-  /* background-color: bisque; */
+.employeeDetailsContainer .top .fieldsContainer {
+  /* background-color: aqua; */
+  width: 100%;
+  padding: 3px 15px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
 }
 
-.employeeDetailsContainer .top .searchFieldContainer input {
+.employeeDetailsContainer .top .addFieldContainer {
+  /* background-color: bisque; */
+}
+
+.employeeDetailsContainer .top .addFieldContainer input {
   width: 250px;
   height: 35px;
   padding: 3px 7px;
@@ -53,7 +59,7 @@
   border: none;
   border-bottom: 2px solid #000;
 }
-.employeeDetailsContainer .top .searchFieldContainer button {
+.employeeDetailsContainer .top .addFieldContainer button {
   width: 130px;
   height: 35px;
   background-color: green;
@@ -64,10 +70,19 @@
   transition: 0.4s;
   cursor: pointer;
 }
-.employeeDetailsContainer .top .searchFieldContainer button:hover {
+.employeeDetailsContainer .top .addFieldContainer button:hover {
   background-color: #fff;
   border: 2px solid green;
   color: #000;
+}
+
+.employeeDetailsContainer .top .searchFieldContainer input {
+  width: 250px;
+  height: 35px;
+  padding: 3px 7px;
+  font-size: 14px;
+  border: none;
+  border-bottom: 2px solid #000;
 }
 
 .bottom {
@@ -142,32 +157,4 @@
   background-color: #fff;
   border: 2px solid crimson;
   color: #000;
-}
-
-.table tr .emailColumn {
-  text-align: center;
-  overflow: hidden;
-}
-
-/* MEDIA QUERY ADDING RESPONSIVENESS */
-@media only screen and (max-width: 600px) {
-  .employeeDetailsContainer {
-    /* background-color: aqua;
-    background-color: rgb(193, 241, 241); */
-    width: 98%;
-    min-height: 500px;
-    border: 2px solid black;
-    border-radius: 10px;
-    margin-top: 50px;
-  }
-
-  .table tr td .editBtn {
-    width: 60px;
-    height: 25px;
-  }
-
-  .table tr td .delBtn {
-    width: 60px;
-    height: 25px;
-  }
 }

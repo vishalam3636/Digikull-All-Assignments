@@ -11,9 +11,19 @@ import EditUser from "./components/editUser/EditUser";
 function App() {
   const [user, setUser] = useState([
     {
-      firstName: "Vishal",
+      firstName: "Brownie 🐕",
+      lastName: "Sweetiee",
+      email: "brownie@yahoo.com",
+    },
+    {
+      firstName: "Vishals Mom",
       lastName: "Chauhan",
-      email: "vishal@yahoo.com",
+      email: "mataji@yahoo.com",
+    },
+    {
+      firstName: "Swetas Mom",
+      lastName: "Saha",
+      email: "mummy@yahoo.com",
     },
     {
       firstName: "Sweta",
@@ -21,9 +31,9 @@ function App() {
       email: "sweta@yahoo.com",
     },
     {
-      firstName: "Brownie 🐕",
-      lastName: "Sweetiee",
-      email: "brownie@yahoo.com",
+      firstName: "Vishal",
+      lastName: "Chauhan",
+      email: "vishal@yahoo.com",
     },
   ]);
 

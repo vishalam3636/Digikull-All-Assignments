@@ -9,10 +9,11 @@ function EmployeeDetails(props) {
   const printUser = props.printUser;
   // console.log(printUser, "printUsers in employee details");
 
-  const [findUser, setFindUser] = useState("");
+  const [addUser, setAddUser] = useState("");
+  const [searchTerm, setSearchTerm] = useState("");
 
   const handleAddEmployee = () => {
-    props.addEmpFunc(findUser);
+    props.addEmpFunc(addUser);
   };
 
   const handleDelete = (e) => {
@@ -27,14 +28,23 @@ function EmployeeDetails(props) {
         <div className="headingContainer">
           <h3>Employee Details</h3>
         </div>
-        <div className="searchFieldContainer">
-          <input
-            type="text"
-            value={findUser}
-            placeholder="search"
-            onChange={(e) => setFindUser(e.target.value)}
-          />
-          <button onClick={handleAddEmployee}>Add Employee</button>
+        <div className="fieldsContainer">
+          <div className="addFieldContainer">
+            <input
+              type="text"
+              value={addUser}
+              placeholder="Add new employee...."
+              onChange={(e) => setAddUser(e.target.value)}
+            />
+            <button onClick={handleAddEmployee}>Add Employee</button>
+          </div>
+          <div className="searchFieldContainer">
+            <input
+              type="text"
+              placeholder="Search user..."
+              onChange={(e) => setSearchTerm(e.target.value)}
+            />
+          </div>
         </div>
       </div>
 
@@ -51,32 +61,44 @@ function EmployeeDetails(props) {
             </thead>
 
             <tbody>
-              {printUser.map((item, key) => {
-                return (
-                  <tr key={key}>
-                    <td>{item.firstName}</td>
-                    <td>{item.lastName}</td>
-                    <td className="emailColumn">{item.email}</td>
-                    <td>
-                      <div className="buttonContainer">
-                        <Link to={`/userDetailEdit/${key}`}>
-                          <button id={key} className="editBtn">
-                            Edit
-                          </button>
-                        </Link>
+              {printUser
+                .filter((val) => {
+                  if (searchTerm === "") {
+                    return val;
+                  } else if (
+                    val.firstName
+                      .toLowerCase()
+                      .includes(searchTerm.toLowerCase())
+                  ) {
+                    return val;
+                  }
+                })
+                .map((item, key) => {
+                  return (
+                    <tr key={key}>
+                      <td>{item.firstName}</td>
+                      <td>{item.lastName}</td>
+                      <td className="emailColumn">{item.email}</td>
+                      <td>
+                        <div className="buttonContainer">
+                          <Link to={`/userDetailEdit/${key}`}>
+                            <button id={key} className="editBtn">
+                              Edit
+                            </button>
+                          </Link>
 
-                        <button
-                          id={key}
-                          className="delBtn"
-                          onClick={handleDelete}
-                        >
-                          Delete
-                        </button>
-                      </div>
-                    </td>
-                  </tr>
-                );
-              })}
+                          <button
+                            id={key}
+                            className="delBtn"
+                            onClick={handleDelete}
+                          >
+                            Delete
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                  );
+                })}
             </tbody>
           </table>
         </div>
