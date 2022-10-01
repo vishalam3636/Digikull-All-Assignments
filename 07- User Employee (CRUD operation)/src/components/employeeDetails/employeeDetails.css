@@ -45,6 +45,7 @@
   padding: 3px 15px;
   display: flex;
   justify-content: space-between;
+  /* align-items: center; */
 }
 
 .employeeDetailsContainer .top .addFieldContainer {
@@ -59,6 +60,7 @@
   border: none;
   border-bottom: 2px solid #000;
 }
+
 .employeeDetailsContainer .top .addFieldContainer button {
   width: 130px;
   height: 35px;
@@ -157,4 +159,59 @@
   background-color: #fff;
   border: 2px solid crimson;
   color: #000;
+}
+
+.table tr .emailColumn {
+  text-align: center;
+  overflow: hidden;
+}
+
+/* MEDIA QUERY ADDING RESPONSIVENESS */
+@media only screen and (max-width: 600px) {
+  .employeeDetailsContainer {
+    /* background-color: aqua;
+    background-color: rgb(193, 241, 241); */
+    width: 98%;
+    min-height: 500px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 50px;
+  }
+
+  .employeeDetailsContainer .top .headingContainer {
+    /* background-color: red; */
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+
+  .employeeDetailsContainer .top .addFieldContainer input {
+    width: 140px;
+    height: 33px;
+    padding: 3px 5px;
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+
+  .employeeDetailsContainer .top .addFieldContainer button {
+    width: 115px;
+    height: 30px;
+    font-size: 13px;
+  }
+
+  .employeeDetailsContainer .top .searchFieldContainer input {
+    width: 140px;
+    height: 33px;
+    padding: 3px 5px;
+    font-size: 12px;
+  }
+
+  .table tr td .editBtn {
+    width: 60px;
+    height: 25px;
+  }
+
+  .table tr td .delBtn {
+    width: 60px;
+    height: 25px;
+  }
 }
