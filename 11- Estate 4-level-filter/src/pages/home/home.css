@@ -1,0 +1,173 @@
+.homeContainer {
+  /* background-color: pink; */
+  padding-top: 80px;
+  min-height: 95vh;
+}
+
+.homeContainer .searchContainer {
+  /* background-color: red; */
+  width: 82%;
+  padding: 10px 0;
+  margin: auto;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.homeContainer .searchContainer input {
+  width: 200px;
+  height: 35px;
+  border-radius: 5px;
+  border: 2px solid gray;
+  padding-left: 10px;
+}
+
+/********** FIlter Container Styling *********/
+.filterContainer {
+  /* background-color: lightsalmon; */
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 0;
+  margin-bottom: 8px;
+}
+
+.locationFilterContainer,
+.whenFilterContainer,
+.priceFilterContainer,
+.propertyTypeContainer,
+.searchButtonContainer {
+  /* background-color: aqua; */
+  width: 150px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.filterContainer label {
+  font-size: 14px;
+}
+
+.filterContainer select {
+  width: 100%;
+  height: 30px;
+}
+
+.searchButtonContainer {
+  /* background-color: purple; */
+  padding: 4px;
+  margin-top: 8px;
+}
+
+.filterContainer .searchButtonContainer button {
+  font-size: 14px;
+  width: 120px;
+  height: 38px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.filterContainer button:hover {
+  background-color: blue;
+  color: #fff;
+  width: 120px;
+  height: 38px;
+  cursor: pointer;
+}
+
+/************ Print Cards Container Styling **********/
+.cardsContainer {
+  /* background-color: rgb(241, 241, 241); */
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+
+  width: 90%;
+  height: 58vh;
+  margin: auto;
+  overflow: auto;
+  border-radius: 10px;
+  padding: 5px 0px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.cardsContainer .card {
+  /* background-color: lightcyan; */
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  width: 280px;
+  border-radius: 10px;
+  border: 2px solid black;
+  padding: 10px 8px;
+  margin: 10px;
+}
+
+.cardsContainer .card .imgContainer {
+  /* background-color: red; */
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 3px;
+}
+
+.cardsContainer .card .imgContainer img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.cardsContainer .card .rateAndFav {
+  /* background-color: pink; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+.cardsContainer .card .rateAndFav font {
+  font-weight: 700;
+}
+
+.cardsContainer .card .houseTitleContainer {
+  /* background-color: green; */
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+.cardsContainer .card .locationContainer {
+  /* background-color: lightsalmon; */
+  font-size: 13px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+.cardsContainer .card .servicesContainer {
+  /* background-color: lightgray; */
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 0 10px; */
+}
+
+.cardsContainer .card .favEmogi {
+  border: 1px solid grey;
+  padding: 4px;
+  border-radius: 50%;
+}
+.cardsContainer .card .favEmogi:hover {
+  cursor: pointer;
+}

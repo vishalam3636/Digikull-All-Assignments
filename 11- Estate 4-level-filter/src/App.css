@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  /* background-color: grey; */
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+  height: 98.9vh;
+}
+
+.headerContainer {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.footerContainer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+button:hover {
+  cursor: pointer;
+}

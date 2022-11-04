@@ -1,0 +1,101 @@
+.headerContainer {
+  /* background-color: black; */
+  background-color: #fff;
+  color: #fff;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerContainer nav {
+  /* background-color: blue; */
+  padding: 3px;
+  min-width: 95%;
+  padding-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerContainer nav .leftSide {
+  /* background-color: red; */
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px;
+}
+
+.headerContainer nav .leftSide .logoContainer {
+  width: 100px;
+  height: 70px;
+  /* height: 3px; */
+  /* background-color: aqua; */
+}
+
+.headerContainer nav .leftSide .logoContainer img {
+  width: 100%;
+}
+
+.headerContainer nav .leftSide .navButtonsContainer {
+  /* background-color: lightgreen; */
+  width: 600px;
+  padding: 3px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.headerContainer .leftSide button {
+  padding: 10px 14px;
+  font-size: 16px;
+  border-radius: 4px;
+  background-color: #fff;
+  border: none;
+  transition: 0.5s;
+}
+.headerContainer .leftSide button:hover {
+  background-color: blue;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.headerContainer nav .rightSide {
+  /* background-color: lightgray; */
+  padding: 3px;
+  width: 240px;
+  /* height: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerContainer nav .rightSide .loginSignupContainer {
+  /* background-color: blueviolet; */
+  padding: 3px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.headerContainer nav .rightSide .loginSignupContainer .navButtonsContainer {
+  width: 70px;
+}
+
+.headerContainer .rightSide button {
+  padding: 3px 10px;
+  width: 90px;
+  height: 35px;
+  font-size: 15px;
+  border-radius: 4px;
+}
+
+.loginButton {
+  background-color: #fff;
+}
+.signUpButton {
+  background-color: blue;
+  color: #fff;
+}
