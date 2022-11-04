@@ -1,0 +1,21 @@
+Initialize Our Application
+
+1. We'll be using next JS
+(this will make our react app even more quicker)
+> npx create-next-app
+
+2. Dependencies
+> npm i @sanity/client
+> npm i @sanity/image-url
+> npm i @stripe/stripe-js
+> npm i canvas-confetti
+> npm i next
+> npm i next-sanity-image
+> npm i react-hot-toast
+> npm i react-icons
+> npm i stripe
+
+> npm install --legacy-peer-deps (install all the same version of packages)
+
+> npm install -g @sanity/cli
+> sanity init --coupon javascriptmastery2022
