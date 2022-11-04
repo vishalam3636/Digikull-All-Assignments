@@ -8,3 +8,6 @@
 **05- Mini-Project (Thaali App) Application** - [https://thaali-app-react-redux-project-vishal.netlify.app/] <br />
 **06- Weather Application** - [https://weather-app-react-project-vishal.netlify.app/] <br />
 **07- Add Employee Application (CRUD)** - [https://add-employee-crud-ope-vishal-project.netlify.app/] <br />
+**08- Data fetch from server** - [] <br />
+**09- E-Commerce (CRUD)** - [] <br />
+**10- Estate 4-level-assignment** - [https://estate-filter-reunion-task-vishal.netlify.app/] <br />
