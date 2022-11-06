@@ -20,12 +20,14 @@ function SignIn() {
 
   //==== function for signIn ====//
   const onSubmit = (value) => {
-    console.log(value, "signin input vals");
+    // console.log(value, "signin input vals");
 
     const userData = JSON.parse(sessionStorage.getItem("user"));
     // console.log(JSON.parse(userData));
-
-    if (
+    if (userData === null) {
+      alert("no data found... try loggin in again...!!");
+      history.push("/");
+    } else if (
       userData.email === value.email &&
       userData.password === value.password
     ) {

@@ -12,7 +12,7 @@ function App() {
 
   const changeMode = () => {
     const containerSelector = document.querySelector(".App");
-    console.log(containerSelector);
+    // console.log(containerSelector);
 
     if (mode === "light") {
       containerSelector.style.backgroundColor = "white";

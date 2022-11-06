@@ -21,7 +21,7 @@ function SignUp(props) {
   } = useForm();
 
   const onSubmit = (value) => {
-    console.log(value);
+    // console.log(value);
     sessionStorage.setItem("user", JSON.stringify(value));
     history.push("/");
   };
