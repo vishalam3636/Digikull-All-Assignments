@@ -1,0 +1,89 @@
+.signUpContainer {
+  width: 500px;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: auto;
+  padding: 15px;
+}
+
+.signUpContainer .heading {
+  /* background-color: lightsalmon; */
+  margin-bottom: 15px;
+  font-weight: 300;
+}
+.signUpContainer .heading h3 {
+  display: inline;
+  font-weight: 500;
+  border-bottom: 2px solid black;
+}
+
+.signUpContainer .fieldContainer {
+  /* background-color: red; */
+  padding: 5px;
+}
+
+.signUpContainer .labelContainer {
+  /* background-color: pink; */
+  margin: 5px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.signUpContainer .labelContainer label {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.signUpContainer .inputAndErrorContainer {
+  /* background-color: blue; */
+  margin: 5px;
+  display: flex;
+}
+
+.signUpContainer .inputContainer {
+  /* background-color: lightcyan; */
+  width: 350px;
+  padding: 5px;
+}
+
+.signUpContainer .inputContainer input {
+  width: 90%;
+  height: 25px;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.signUpContainer .errorContainer {
+  /* background-color: lightgreen; */
+  margin: 5px;
+  width: 250px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.signUpContainer .errorContainer label {
+  color: red;
+}
+
+.signUpBtnContainer {
+  /* background-color: lightgray; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signUpBtnContainer input {
+  width: 150px;
+  height: 30px;
+  margin-top: 25px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.signUpContainer .route {
+  cursor: pointer;
+  color: blue;
+  font-weight: 500;
+}

@@ -1,0 +1,89 @@
+.signInContainer {
+  width: 500px;
+  border: 2px solid rgb(214, 214, 214);
+  border-radius: 10px;
+  margin: auto;
+  padding: 15px;
+}
+
+.signInContainer .heading {
+  /* background-color: lightsalmon; */
+  margin-bottom: 15px;
+  font-weight: 300;
+}
+.signInContainer .heading h3 {
+  display: inline;
+  font-weight: 500;
+  border-bottom: 2px solid rgb(214, 214, 214);
+}
+
+.signInContainer .fieldContainer {
+  /* background-color: red; */
+  padding: 5px;
+}
+
+.signInContainer .labelContainer {
+  /* background-color: pink; */
+  margin: 5px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.signInContainer .labelContainer label {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.signInContainer .inputAndErrorContainer {
+  /* background-color: blue; */
+  margin: 5px;
+  display: flex;
+}
+
+.signInContainer .inputContainer {
+  /* background-color: lightcyan; */
+  width: 350px;
+  padding: 5px;
+}
+
+.signInContainer .inputContainer input {
+  width: 90%;
+  height: 25px;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.signInContainer .errorContainer {
+  /* background-color: lightgreen; */
+  margin: 5px;
+  width: 250px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.signInContainer .errorContainer label {
+  color: red;
+}
+
+.loginBtnContainer {
+  /* background-color: lightgray; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginBtnContainer input {
+  width: 150px;
+  height: 30px;
+  margin-top: 25px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.signInContainer .route {
+  cursor: pointer;
+  color: blue;
+  font-weight: 500;
+}
