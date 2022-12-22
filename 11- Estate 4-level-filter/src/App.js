@@ -7,7 +7,7 @@ import data from "./data";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import Home from "./pages/home/Home";
-import PropertyDetails from "./pages/propertyDetails/Favourites";
+import PropertyDetails from "./pages/propertyDetails/Favourites"; // does not exist niche wala use ho rha hai 🤐
 import Favourites from "./pages/propertyDetails/Favourites";
 
 function App() {
