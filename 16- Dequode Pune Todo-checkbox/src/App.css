@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  height: 95vh;
+  /* background-color: lightgray; */
+  padding: 20px;
+}
+
+.App h2 {
+  margin-bottom: 30px;
+}
+
+.App h4 {
+  margin-bottom: 20px;
+}
+
+.App .total {
+  background-color: crimson;
+  color: #fff;
+  padding: 5px;
+}
+
+.todosContainer {
+  background-color: lightpink;
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  padding: 10px;
+  overflow: auto;
+  border-radius: 12px;
+}
+
+.todosContainer ul {
+  /* background-color: aqua; */
+  list-style: none;
+}
+
+.todosContainer ul li {
+  /* background-color: lightcoral; */
+  margin: 5px;
+  display: flex;
+}
+
+.num {
+  margin-right: 10px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.check {
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  /* background-color: lightgrey; */
+  display: flex;
+  padding: 3px 10px;
+  align-items: flex-start;
+}
+
+input {
+  width: 16px;
+  height: 16px;
+}
